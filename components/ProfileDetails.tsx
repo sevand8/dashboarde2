@@ -11,7 +11,7 @@ const ProfileDetails = () => {
       <Text className='text-black bold text-xl'> Sebastian Andrade </Text>
       <Text className='font-bold text-gray-500'>📕Estudiante📕</Text>
 
-      <View className='flex flex-row gap-4 mt-4'>
+      <View className='flex flex-row gap-4 mt-4 '>
       <IconButton icon='instagram' pulsar={() => console.log('Instagram')} color="purple"></IconButton>
       <IconButton icon='whats-app' pulsar={() => console.log('whats-app')} color="green"></IconButton>
       <IconButton icon='twitter' pulsar={() => console.log('twitter')} color="skyblue"></IconButton>
