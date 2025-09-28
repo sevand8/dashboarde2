@@ -3,7 +3,7 @@ import React from 'react'
 
 interface CustomTextProperties{
     value: string;
-    variant: "normal"|"title"|"subtitle";
+    variant: "normal"|"title"|"subtitle"|"subtitle2";
 }
 const CustomText = ({value,variant}: CustomTextProperties) => {
  return(
@@ -18,9 +18,11 @@ function selectVariables(variante: string ) {
         case "title":
             return "text-2xl font-bold text-gray"
         case "subtitle":
-            return "text-xl font-bold text-gray-500"
-        default:
-            return "text-base font-normal text-gray-700"    
+            return "text-xl font-bold text-gray-500"   
+        case "normal":
+            return "text-base font-normal text-gray-700"   
+        default: 
     }
 
 }
+
