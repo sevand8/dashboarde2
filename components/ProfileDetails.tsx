@@ -1,15 +1,16 @@
 import React from 'react';
-import { Image, Text, View, useColorScheme } from 'react-native';
+import { Image, View } from 'react-native';
 import "../global.css";
-import IconButton from './IconButton';
+import IconButton from './ui/IconButton';
+import CustomText from './ui/CustomText';
 
 const ProfileDetails = () => {
   return (
     <View className='flex justify-center items-center bg-white w-screen h-screen'>
       < Image source ={require("../assets/images/icon.png")} 
       className="max-w-32 max-h-32 rounded-full"/>
-      <Text className='text-black bold text-xl'> Sebastian Andrade </Text>
-      <Text className='font-bold text-gray-500'>📕Estudiante📕</Text>
+      <CustomText value="Sebastian Andrade" variant="title"></CustomText>
+      <CustomText value="💻Estudiante💻" variant="subtitle"></CustomText>
 
       <View className='flex flex-row gap-4 mt-4 '>
       <IconButton icon='instagram' pulsar={() => console.log('Instagram')} color="purple"></IconButton>
@@ -17,6 +18,7 @@ const ProfileDetails = () => {
       <IconButton icon='twitter' pulsar={() => console.log('twitter')} color="skyblue"></IconButton>
       <IconButton icon='tik-tok' pulsar={() => console.log('tik-tok')} color="black"></IconButton>
       <IconButton icon='linkedin' pulsar={() => console.log('linkedin')} color="blue"></IconButton>
+      
      </View>
      </View>
   )
